@@ -1,0 +1,10 @@
+<h3>New message</h3>
+<form action="/submit" method="POST">
+	<dl>
+<dd><input type="text" name="message[body]" placeholder="Enter your message" /></dd>
+	<dd><input type="radio" name="message[destruction_policy]" value="first_visit"checked>Destroy on first visit </p></dd>
+	<dd><input type="radio" name="message[destruction_policy]" value="one_hour" >After 1 hour</p></dd>
+
+	<input type="submit" value="Submit" />
+	</dl>
+</form>

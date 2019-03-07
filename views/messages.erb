@@ -1,0 +1,10 @@
+<h3>Messages:</h3>
+<ul>
+<% @messages.each do |message| %>
+	<li>
+		<a href="/messages/<%= message.link %>"><%= message.link %></a>
+		<%= message.destruction_policy %>
+	</li>
+<% end %>
+</ul>
+<a href="/">New message</a>
